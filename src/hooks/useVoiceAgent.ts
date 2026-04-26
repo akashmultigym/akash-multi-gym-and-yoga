@@ -23,11 +23,15 @@ export function useVoiceAgent() {
     setIsConnecting(true);
     setError(null);
     try {
-      if (!process.env.GEMINI_API_KEY) {
-        throw new Error("Please configure your Gemini API Key in the AI Studio Settings (Secrets panel) to use the voice agent.");
+      const apiKey = process.env.GEMINI_API_KEY || (import.meta as any).env?.VITE_GEMINI_API_KEY;
+
+      if (!apiKey || apiKey === "undefined" || apiKey === "null") {
+        throw new Error(
+          "Gemini API Key is missing. Please add a secret named 'GEMINI_API_KEY' in the Secrets panel (gear icon) and refresh."
+        );
       }
 
-      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      const ai = new GoogleGenAI({ apiKey });
       const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: PCM_SAMPLE_RATE });
       audioContextRef.current = audioCtx;
       

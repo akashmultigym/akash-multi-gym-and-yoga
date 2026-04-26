@@ -580,9 +580,31 @@ export default function App() {
           <p className="text-zinc-500 text-sm mb-8">
             Owned by Manoj Majhi • Call: 8240038696
           </p>
-          <div className="text-zinc-600 text-xs font-mono">
+          <div className="text-zinc-600 text-xs font-mono mb-6">
             &copy; {new Date().getFullYear()} Akash Multi Gym And Yoga. All
             rights reserved.
+          </div>
+          <div className="pt-8 border-t border-zinc-900/50 flex flex-col items-center gap-4">
+            <p className="text-zinc-500 text-[10px] uppercase tracking-widest">
+              Site made by{" "}
+              <a
+                href="https://www.facebook.com/share/1B3CdKJ5L9/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lime-500 hover:text-lime-400 underline decoration-lime-500/30 underline-offset-4 transition-colors"
+              >
+                Jolly Ai
+              </a>
+            </p>
+            <a
+              href="https://wa.me/919330273530"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-400 hover:text-zinc-200 text-xs transition-all flex items-center gap-2 group"
+            >
+              <MessageCircle className="w-3 h-3 text-lime-500 group-hover:scale-110 transition-transform" />
+              WhatsApp For Getting The Great Business Growth Services
+            </a>
           </div>
         </div>
       </footer>
