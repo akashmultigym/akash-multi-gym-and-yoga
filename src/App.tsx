@@ -470,6 +470,8 @@ export default function App() {
                     <p className="text-zinc-400 leading-relaxed mb-3">
                       Akra Station Road, Noa Para,
                       <br />
+                      Maheshtala,
+                      <br />
                       Kolkata 700141
                     </p>
                     <a
@@ -546,8 +548,7 @@ export default function App() {
                     Akash Multi Gym And Yoga
                   </h3>
                   <p className="text-zinc-400 max-w-xs mx-auto">
-                    Located conveniently on Akra Station Road, Noa Para, Kolkata
-                    700141.
+                    Located conveniently on Akra Station Road, Noa Para, Maheshtala Kolkata 700141.
                   </p>
                 </div>
                 <a
