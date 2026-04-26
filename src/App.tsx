@@ -71,19 +71,42 @@ export default function App() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div
-              className="flex items-center gap-2 cursor-pointer"
+              className="flex items-start gap-3 cursor-pointer"
               onClick={() => scrollTo("hero")}
             >
-              <div className="w-10 h-10 bg-lime-500 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-lime-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                 <Dumbbell className="text-zinc-950 h-6 w-6" strokeWidth={2.5} />
               </div>
-              <div>
-                <h1 className="font-bold text-xl tracking-tight leading-none uppercase">
-                  Akash
-                </h1>
-                <p className="text-[10px] text-lime-500 uppercase tracking-widest font-semibold mt-0.5">
-                  Multi Gym And Yoga
-                </p>
+              <div className="flex flex-col">
+                <div className="flex flex-col">
+                  <h1 className="font-bold text-xl tracking-tight leading-none uppercase">
+                    Akash
+                  </h1>
+                  <p className="text-[10px] text-lime-500 uppercase tracking-widest font-semibold mt-0.5">
+                    Multi Gym And Yoga
+                  </p>
+                </div>
+                <div className="hidden md:flex flex-col text-[9px] text-zinc-500 mt-1.5 font-medium tracking-wide">
+                  <span>
+                    Site made by{" "}
+                    <a
+                      href="https://www.facebook.com/share/1B3CdKJ5L9/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lime-500 hover:text-lime-400 hover:underline"
+                    >
+                      Jolly Ai
+                    </a>
+                  </span>
+                  <a
+                    href="https://wa.me/919330273530"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-zinc-300 mt-0.5"
+                  >
+                    WhatsApp For Getting The Great Business Growth Services
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -142,6 +165,29 @@ export default function App() {
                     {item.label}
                   </button>
                 ))}
+                
+                <div className="px-4 py-2 flex flex-col gap-2 rounded-xl bg-zinc-950/50 border border-zinc-800/50 mt-2">
+                  <span className="text-[10px] text-zinc-400 uppercase tracking-widest font-semibold font-mono">
+                    Site made by{" "}
+                    <a
+                      href="https://www.facebook.com/share/1B3CdKJ5L9/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lime-500 hover:text-lime-400 underline"
+                    >
+                      Jolly Ai
+                    </a>
+                  </span>
+                  <a
+                    href="https://wa.me/919330273530"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-zinc-300 hover:text-white"
+                  >
+                    WhatsApp For Getting The Great Business Growth Services
+                  </a>
+                </div>
+
                 <div className="pt-4 pb-2 px-4">
                   <a
                     href="https://wa.me/918240038696"
@@ -189,14 +235,35 @@ export default function App() {
                 Open Daily in Noa Para
               </span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-extrabold text-zinc-100 tracking-tight leading-[1.1] mb-6">
-              THE BEST GYM IN <br />
+            <h2 className="text-5xl md:text-7xl font-extrabold text-zinc-100 tracking-tight leading-[1.1] mb-4">
+              AKASH <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-600">
-                MAHESHTALA AREA
+                MULTI GYM AND YOGA
               </span>
             </h2>
+            <div className="flex flex-col md:hidden text-[10px] text-zinc-500 mb-6 font-medium tracking-wide">
+              <span>
+                Site made by{" "}
+                <a
+                  href="https://www.facebook.com/share/1B3CdKJ5L9/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lime-500 hover:text-lime-400 hover:underline"
+                >
+                  Jolly Ai
+                </a>
+              </span>
+              <a
+                href="https://wa.me/919330273530"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-zinc-300 mt-1"
+              >
+                WhatsApp For Getting The Great Business Growth Services
+              </a>
+            </div>
             <p className="text-lg md:text-xl text-zinc-400 max-w-lg mb-10 font-light leading-relaxed">
-              Premium yoga sessions and modern multi-gym equipment designed for
+              The Best Gym in Maheshtala Area. Premium yoga sessions and modern multi-gym equipment designed for
               real transformations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

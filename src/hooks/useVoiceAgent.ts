@@ -122,7 +122,11 @@ export function useVoiceAgent() {
       
       // onopen should be called when ready.
     } catch (err: any) {
-      console.error(err);
+      if (err.message && err.message.includes("Gemini API Key")) {
+        // Just set the error in UI, don't scream in the console
+      } else {
+        console.error("Voice Agent Initialization Error:", err);
+      }
       setError(err.message || "Failed to start voice agent");
       setIsConnecting(false);
       disconnect();
